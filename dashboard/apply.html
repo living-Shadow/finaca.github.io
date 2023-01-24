@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Finaca</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="position-relative bg-white d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-blue navbar-light">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary"><i class="fab fa-gripfire me-2"></i>Finaca</h3>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div
+                            class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1">
+                        </div>
+                    </div>
+                    <div class="ms-3">
+                        <h6 class="mb-0">Jhon Doe</h6>
+                        <span>Logged in</span>
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="nav-item nav-link"><i
+                            class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="apply.html" class="nav-item nav-link active"><i class="fa fa-paperclip me-2"></i>Apply
+                        Loan</a>
+                    <a href="deposit.html" class="nav-item nav-link"><i class="fa fa-exchange-alt me-2"></i>Deposit</a>
+                    <a href="history.html" class="nav-item nav-link"><i class="fa fa-history me-2"></i>History</a>
+                    <a href="profile.html" class="nav-item nav-link"><i class="fa fa-portrait me-2"></i>Profile</a>
+
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-blue navbar-light sticky-top px-4 py-0">
+                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-primary mb-0"><i class="fab fa-gripfire"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Notificatin</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-blue border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Profile updated</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">New user added</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Password changed</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">See all notifications</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="img/user.jpg" alt=""
+                                style="width: 40px; height: 40px;">
+                            <span class="d-none d-lg-inline-flex">John Doe</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-blue border-0 rounded-0 rounded-bottom m-0">
+                            <a href="profile.html" class="dropdown-item">My Profile</a>
+                            <a href="#" class="dropdown-item">Settings</a>
+                            <a href="../index.html" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+            <!-- Apply Form -->
+            <div class="col-sm-12 col-xl-12 pt-4 px-4 pb-4">
+                <div class="bg-blue rounded h-100 p-4">
+                    <h6 class="mb-4">Application Form</h6>
+                    <form action="" method="post">
+                        <div class="mb-3">
+                            <label for="tl" class="col-sm-2 col-form-label">Type of Loan *</label>
+                            <div class="col-sm-10">
+                                <select class="form-select form-select sm-3" id="tl"
+                                    aria-label=".form-select-lg example">
+                                    <option selected value="">-- Select --</option>
+                                    <option value="pH">Home Loan</option>
+                                    <option value="pD">Personal Loan</option>
+                                    <option value="pA">Vehicle Loan</option>
+                                </select>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lAmount" class="col-sm-2 col-form-label">Loan Amount *</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="lAmount">
+                            </div>
+                        </div>
+
+                        <h6 _ngcontent-c8="" class="heading"><span _ngcontent-c8="">Personal </span>Details</h6>
+
+                        <div _ngcontent-c8="" class="md-3">
+                            <label _ngcontent-c8="" class="col-sm-2 col-form-label">First Name
+                                <sup _ngcontent-c8="" class="mandatory">*</sup>
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+
+                        <div _ngcontent-c8="" class="md-4">
+                            <div _ngcontent-c8="" class="">
+                                <label _ngcontent-c8="" class="col-sm-2 col-form-label">Middle Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputEmail3">
+                                </div>
+                            </div>
+                        </div>
+                        <div _ngcontent-c8="" class="md-4">
+                            <div _ngcontent-c8="" class="">
+                                <label _ngcontent-c8="" class="col-sm-2 col-form-label">Last Name
+                                    <sup _ngcontent-c8="" class="mandatory">*</sup>
+                                </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputEmail3">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div _ngcontent-c8="" class="md-4">
+                            <div _ngcontent-c8="" class="">
+                                <label _ngcontent-c8="" class="col-sm-2 col-form-label">Date of Birth
+                                    <sup _ngcontent-c8="" class="mandatory">*</sup>&nbsp;
+                                </label>
+                                <div class="col-sm-10">
+                                    <input _ngcontent-c8="" apprestrictinput="dateChars" autocomplete="off"
+                                        class=" input datepicker form-control ng-untouched ng-pristine ng-valid"
+                                        id="rcdDob" maxlength="10" name="rcdDob" placeholder="DD/MM/YYYY" type="text"
+                                        im-insert="true">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div _ngcontent-c8="" class="md-4">
+                            <div _ngcontent-c8="" class="">
+                                <label _ngcontent-c8="" class="col-sm-2 col-form-label">Gender
+                                    <sup _ngcontent-c8="" class="mandatory">*</sup>
+                                </label>
+                                <div class="col-sm-10">
+                                    <select _ngcontent-c8="" class="form-select form-select sm-3" id="rcdGender"
+                                        name="rcdGender" ng-reflect-is-disabled="true" ng-reflect-model="M"
+                                        ng-reflect-name="gender" type="select">
+                                        <option _ngcontent-c8="" selected="" value="">-- Select --</option>
+                                        <!---->
+                                        <option _ngcontent-c8="" value="M">
+                                            Male</option>
+                                        <option _ngcontent-c8="" value="F">
+                                            Female</option>
+                                        <option _ngcontent-c8="" value="O">
+                                            Others</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div _ngcontent-c8="" class="md-4">
+                            <div _ngcontent-c8="" class="">
+                                <label _ngcontent-c8="" class="col-sm-2 col-form-label">Mobile No.
+                                    <sup _ngcontent-c8="" class="mandatory">*</sup>
+                                </label>
+                                <div class="col-sm-10">
+                                    <div _ngcontent-c8="" class="input-group" id="mobileInput">
+                                        <input _ngcontent-c8="" apprestrictinput="integer" autocomplete="off"
+                                            class="form-control form-control-md phonenumber ng-untouched ng-pristine ng-valid"
+                                            id="rcdMobile" maxlength="10" name="rcdMobile" type="text" value="">
+                                        <span _ngcontent-c8="" class="input-group-addon inputgroupbtn"> <button
+                                                _ngcontent-c8="" class="btn btn-danger btn rcdMobileVerify"
+                                                id="verify">Verify</button></span>
+                                        <span _ngcontent-c8="" class="input-group-addon inputgroupbtn"><button
+                                                _ngcontent-c8="" class="btn btn-danger btn-sm rcdMobileVerified"
+                                                id="Verifiedbtn"
+                                                style="cursor: not-allowed; display: none;">Verified</button></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div _ngcontent-c8="" class="md-4">
+                            <label _ngcontent-c8="" class="col-sm-2 col-form-label">E-Mail ID
+                                <!----><sup _ngcontent-c8="" class="mandatory">*</sup>
+                            </label>
+                            <div class="col-sm-10">
+                                <div _ngcontent-c8="" class="input-group" id="emailInput">
+                                    <input _ngcontent-c8="" autocomplete="off"
+                                        class="form-control form-control-md ng-untouched ng-pristine" id="rcdEmail"
+                                        maxlength="45" name="rcdEmail" type="text">
+                                    <span _ngcontent-c8="" class="input-group-addon inputgroupbtn"><button
+                                            _ngcontent-c8="" class="btn btn-danger btn-sm rcdEmailVerify"
+                                            id="verifyEmail" style="display: none;">Verify</button></span>
+                                    <span _ngcontent-c8="" class="input-group-addon inputgroupbtn"><button
+                                            _ngcontent-c8="" class="btn btn-danger btn-sm rcdEmailVerified"
+                                            id="VerifiedbtnEmail"
+                                            style="cursor: not-allowed; display: none;">Verified</button></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div _ngcontent-c8="" class="md-4">
+                            <div _ngcontent-c8="" class="">
+                                <label _ngcontent-c8="" class="col-sm-3 col-form-label" id="residentLabel">Residential
+                                    Status
+                                    <sup _ngcontent-c8="" class="mandatory">*</sup>
+                                </label>
+                                <div class="col-sm-10">
+                                    <select _ngcontent-c8="" class="form-select form-select sm-3" id="rcdResStatus"
+                                        name="rcdResStatus" ng-reflect-is-disabled="true" ng-reflect-name="resident">
+                                        <option _ngcontent-c8="" selected="" value="">-- Select --</option>
+                                        <!---->
+                                        <option _ngcontent-c8="" value="2">Non-Resident</option>
+                                        <option _ngcontent-c8="" value="1">Resident</option>
+
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Marital Status *</label>
+                            <div class="col-sm-10">
+                                <select class="form-select form-select sm-3" aria-label=".form-select-lg example">
+                                    <option _ngcontent-c8="" selected="" value="">-- Select --</option>
+                                    <!---->
+                                    <option _ngcontent-c8="" value="1">
+                                        Married</option>
+                                    <option _ngcontent-c8="" value="2">
+                                        Single</option>
+                                    <option _ngcontent-c8="" value="3">
+                                        Divorced</option>
+                                    <option _ngcontent-c8="" value="4">
+                                        Widow</option>
+                                    <option _ngcontent-c8="" value="5">
+                                        Others</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <h6 _ngcontent-c8="" class="heading"><span _ngcontent-c8="">Identity </span>Details</h6>
+
+                        <div _ngcontent-c8="" class="md-4">
+                            <div _ngcontent-c8="" class="">
+                                <label _ngcontent-c8="" class="col-sm-2 col-form-label">Aadhaar No.
+                                    <sup _ngcontent-c8="" class="mandatory">*</sup>
+                                </label>
+                                <div class="col-sm-10">
+                                    <div _ngcontent-c8="" class="input-group">
+                                        <input _ngcontent-c8="" autocomplete="off"
+                                            class="form-control form-control-md customInput aadhar ng-untouched ng-pristine"
+                                            id="rcdAadharno" maxlength="12" name="rcdAadharno"
+                                            oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
+                                            type="text">
+                                        <span _ngcontent-c8="" class="input-group-addon inputgroupbtn"><!----><button
+                                                _ngcontent-c8="" class="btn btn-danger btn"
+                                                id="aadharVerify">Verify</button></span>
+
+                                        <span _ngcontent-c8="" class="input-group-addon inputgroupbtn"><!----></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div _ngcontent-c8="" class="md-4">
+                            <div _ngcontent-c8="" class="">
+                                <label _ngcontent-c8="" class="col-sm-2 col-form-label">PAN / GIR No.
+                                    <sup _ngcontent-c8="" class="mandatory">*</sup>
+                                </label>
+                                <div class="col-sm-10">
+                                    <div _ngcontent-c8="" class="input-group">
+                                        <input _ngcontent-c8="" apprestrictinput="alphawithNumeric" autocomplete="off"
+                                            class="form-control form-control-md ng-untouched ng-pristine" id="rcdPanno"
+                                            maxlength="10" name="rcdPanno"
+                                            oninput="this.value = this.value.toUpperCase()" type="text">
+                                        <span _ngcontent-c8="" class="input-group-addon inputgroupbtn"> <!----><button
+                                                _ngcontent-c8="" class="btn btn-danger btn"
+                                                id="panVerfiy">Verify</button></span>
+
+                                        <span _ngcontent-c8="" class="input-group-addon inputgroupbtn"><!----></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div _ngcontent-c8="" class="md-4">
+                            <div _ngcontent-c8="" class="">
+                                <label _ngcontent-c8="" class="col-sm-2 col-form-label">Passport Number<!----></label>
+                                <div class="col-sm-10">
+                                    <input _ngcontent-c8="" apprestrictinput="alphawithNumeric" autocomplete="off"
+                                        class="form-control form-control-md ng-untouched ng-pristine" id="rcdPassportno"
+                                        maxlength="9" name="rcdPassportno"
+                                        oninput="this.value = this.value.toUpperCase()" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div _ngcontent-c8="" class="clearfix"></div>
+                        <div _ngcontent-c8="" class="md-4">
+                            <div _ngcontent-c8="" class="">
+                                <label _ngcontent-c8="" class="col-sm-2 col-form-label">Voter ID</label>
+                                <div class="col-sm-10">
+                                    <input _ngcontent-c8="" apprestrictinput="alphawithNumeric" autocomplete="off"
+                                        class="form-control form-control-md ng-untouched ng-pristine" id="rcdVoterid"
+                                        maxlength="10" name="rcdVoterid" oninput="this.value = this.value.toUpperCase()"
+                                        type="text">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lAmount" class="col-sm-2 col-form-label">Driving Licenset</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="lAmount">
+                            </div>
+                        </div>
+                        <h6 _ngcontent-c8="" class="heading"><span _ngcontent-c8="">Employment </span>Details</h6>
+
+                        <div class="mb-3">
+                            <label for="inputEmail3" class="col-sm-4 col-form-label">Type of Employment *</label>
+                            <div class="col-sm-10">
+                                <select class="form-select form-select sm-3" aria-label=".form-select-lg example">
+                                    <option _ngcontent-c8="" selected="" value="">-- Select --</option>
+                                    <!---->
+                                    <option _ngcontent-c8="" value="PG">SALARIED - GOVT/PSU</option>
+                                    <option _ngcontent-c8="" value="PS">SALARIED - PVT</option>
+                                    <option _ngcontent-c8="" value="SE">SELF EMP/BUSINESS/PROFESSION</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="lAmount" class="col-sm-4 col-form-label">Name of the Company *</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="lAmount">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="lAmount" class="col-sm-4 col-form-label">Total Years of Experience *</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="lAmount">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Apply</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Form ends -->
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/chart/chart.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>
